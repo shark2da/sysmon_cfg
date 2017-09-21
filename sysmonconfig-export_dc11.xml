@@ -99,6 +99,7 @@
 		<NetworkConnect onmatch="include">
 	<!--COMMENT:	Takes a very conservative approach to network logging, limit to extremely high-signal events.-->
 			<!--Suspicious sources-->
+			<Image condition="begin with">%temp%</Image>
 			<Image condition="begin with">C:\Users</Image>
 			<Image condition="begin with">C:\ProgramData</Image>
 			<Image condition="begin with">C:\Windows\Temp</Image>
